@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "真实尺寸 TrueScale",
+    "description": "扩展程序名称。"
+  },
+  "extDesc": {
+    "message": "在桌面显示器上以 1:1 真实物理尺寸就地预览移动端与平板网页，支持银行卡贴屏校准、真实触摸滑动与透明机壳长截图。",
+    "description": "扩展程序商店简介。"
+  }
+}

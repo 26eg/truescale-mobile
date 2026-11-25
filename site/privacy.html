@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./icon128.png" />
+  <title>Privacy Policy / 隐私政策 — 真实尺寸 TrueScale Mobile</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --border: rgba(0, 0, 0, 0.08);
+      --accent: #007aff;
+      --green-bg: rgba(52, 199, 89, 0.12);
+      --green-fg: #1b7f36;
+      --pill-bg: #e5e5ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111215;
+        --card: #1c1c1e;
+        --text: #f5f5f7;
+        --muted: #98989d;
+        --border: rgba(255, 255, 255, 0.12);
+        --accent: #0a84ff;
+        --green-bg: rgba(48, 209, 88, 0.15);
+        --green-fg: #30d158;
+        --pill-bg: #2c2c2e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 16px 64px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+    }
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 24px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .brand img {
+      width: 28px;
+      height: 28px;
+      display: block;
+    }
+    .brand a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .brand a:hover { text-decoration: underline; }
+    .lang-switch {
+      display: inline-flex;
+      background: var(--pill-bg);
+      padding: 4px;
+      border-radius: 999px;
+      gap: 4px;
+    }
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--card);
+      color: var(--text);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .badge {
+      background: var(--green-bg);
+      color: var(--green-fg);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 24px 0 8px;
+    }
+    p, li {
+      font-size: 15px;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 16px;
+    }
+    li { margin-bottom: 8px; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: var(--pill-bg);
+    }
+    a { color: var(--accent); }
+    .footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    [data-lang] { display: none; }
+    html[data-active-lang="zh"] [data-lang="zh"] { display: block; }
+    html[data-active-lang="en"] [data-lang="en"] { display: block; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="topbar">
+      <div class="brand">
+        <img src="./icon128.png" alt="TrueScale Mobile" />
+        <span><a href="./index.html">真实尺寸 TrueScale Mobile</a> · 26eg</span>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language switcher">
+        <button type="button" class="lang-btn" data-set-lang="zh">简体中文</button>
+        <button type="button" class="lang-btn" data-set-lang="en">English</button>
+      </div>
+    </div>
+
+    <section data-lang="zh">
+      <h1>隐私政策（Privacy Policy）</h1>
+      <div class="meta">生效日期：2026-11-25 · 开发者：26eg</div>
+      <div class="badge">100% 纯本地运行 · 零数据收集 · 零行为埋点 · 零远程脚本</div>
+
+      <h2>1. 我们收集哪些数据？</h2>
+      <p><strong>不收集任何数据。</strong>「真实尺寸 TrueScale Mobile」的所有功能均在您的本地浏览器中离线完成。我们<strong>不会</strong>收集、读取、上传、出售或与任何第三方共享您的浏览历史、访问网址、网页内容、账号信息、表单输入、屏幕截图或设备指纹。</p>
+
+      <h2>2. 本地存储与卸载清理</h2>
+      <p>插件仅使用浏览器内置的 <code>chrome.storage.local</code> 在本地保存以下功能性偏好设置：</p>
+      <ul>
+        <li>各显示器分档对应的物理尺寸校准比例（<code>px/mm</code>）与显示器备注名；</li>
+        <li>用户手动添加的自定义机型参数；</li>
+        <li>语言、主题（浅色/深色/跟随系统）、最近选择的设备方向与提示收起状态。</li>
+      </ul>
+      <p>上述数据<strong>仅存于您的本机浏览器扩展存储目录中</strong>，不会通过云端同步，也不会发送至任何外部服务器。卸载插件时，浏览器会自动删除所有相关本地存储数据。</p>
+
+      <h2>3. 权限使用说明</h2>
+      <p>插件申请的每项 Manifest V3 权限均严格服务于单一核心目标——「在当前网页按 1:1 物理尺寸就地预览与截图」：</p>
+      <ul>
+        <li><code>declarativeNetRequest</code>：仅对您主动开启模拟器的当前标签页（按 <code>tabId</code> 严格隔离）应用临时移动端 <code>User-Agent</code> 与允许同页内嵌预览的响应头规则，退出模拟、刷新或关闭标签页时立即自动清除。</li>
+        <li><code>tabs</code>：用于读取当前活动标签页的网址、重置浏览器缩放至 100%，并在您主动点击截图按钮时通过 <code>captureVisibleTab</code> 截取当前视口画面。</li>
+        <li><code>storage</code>：仅用于在本地保存您的校准参数、自定义机型及界面偏好。</li>
+        <li><code>scripting</code>：仅在您点击扩展图标开启预览时，将隔离开的 Shadow DOM 模拟器界面注入当前标签页。</li>
+        <li><code>&lt;all_urls&gt;</code>：允许用户在任意访问的电商站点或普通网页上按 1:1 物理尺寸就地预览与截图。插件不会在后台静默扫描、抓取或上报任何网页数据。</li>
+      </ul>
+
+      <h2>4. 第三方链接</h2>
+      <p>插件「支持开发者」弹窗中可能包含指向 GitHub、Ko-fi 或爱发电的静态外部超链接。只有当您<strong>主动点击</strong>这些链接时，浏览器才会在新标签页打开对应页面；插件本身不会加载任何外部脚本或跟踪像素。</p>
+
+      <h2>5. 开源许可与联系方式</h2>
+      <p>本项目源码基于 <strong>GNU Affero General Public License v3.0 (AGPL-3.0)</strong> 协议在 GitHub 公开，所有代码完全可公开审计。如有任何隐私问题或反馈，请通过 GitHub 提交 Issue：<a href="https://github.com/26eg/truescale-mobile/issues" target="_blank" rel="noopener noreferrer">https://github.com/26eg/truescale-mobile/issues</a>。</p>
+    </section>
+
+    <section data-lang="en">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Effective Date: 2026-11-25 · Developer: 26eg</div>
+      <div class="badge">100% Local Execution · Zero Data Collection · Zero Analytics · Zero Remote Code</div>
+
+      <h2>1. Data Collection</h2>
+      <p><strong>TrueScale Mobile collects zero personal or browsing data.</strong> All preview rendering, physical screen calibration, touch simulation, and screenshot stitching run 100% locally inside your browser. We never collect, transmit, store remotely, or sell your browsing history, visited URLs, page contents, credentials, screenshots, or device fingerprints.</p>
+
+      <h2>2. Local Storage</h2>
+      <p>The extension uses only <code>chrome.storage.local</code> to persist functional preferences on your device:</p>
+      <ul>
+        <li>Physical screen calibration ratios (<code>px/mm</code>) and optional display labels per monitor profile;</li>
+        <li>User-defined custom device presets;</li>
+        <li>UI language, color theme, last selected device orientation, and dismissed tips state.</li>
+      </ul>
+      <p>This data never leaves your device, is not synced externally, and is automatically deleted by the browser when the extension is uninstalled.</p>
+
+      <h2>3. Permissions Justification</h2>
+      <p>Every Manifest V3 permission requested by TrueScale Mobile is strictly limited to its single purpose — previewing and capturing web pages at true 1:1 physical size:</p>
+      <ul>
+        <li><code>declarativeNetRequest</code>: Applies tab-scoped (<code>tabIds: [tabId]</code>) session rules only for the active simulated tab to emulate mobile <code>User-Agent</code> headers and allow in-place iframe framing. Rules are automatically cleared when exiting simulation, reloading the top page, or closing the tab.</li>
+        <li><code>tabs</code>: Reads the active tab URL/state, resets zoom to 100% during 1:1 calibration accuracy, and captures screenshots via <code>chrome.tabs.captureVisibleTab</code> only when explicitly triggered by the user.</li>
+        <li><code>storage</code>: Stores monitor calibration parameters, custom devices, and UI preferences locally via <code>chrome.storage.local</code>.</li>
+        <li><code>scripting</code>: Injects the isolated Shadow DOM simulator UI into the active tab only when the user clicks the extension icon.</li>
+        <li><code>&lt;all_urls&gt;</code>: Enables users to preview and capture any website they visit at true 1:1 physical dimensions. No background scraping, tracking, or network exfiltration ever occurs.</li>
+      </ul>
+
+      <h2>4. Third-Party Links</h2>
+      <p>The optional “Support the Developer” modal contains static external hyperlinks (such as GitHub, Ko-fi, or Afdian). External sites are opened only when you explicitly click a link; no third-party SDKs, trackers, or remote scripts are bundled or executed.</p>
+
+      <h2>5. Open Source License &amp; Contact</h2>
+      <p>TrueScale Mobile is open source under the <strong>GNU Affero General Public License v3.0 (AGPL-3.0)</strong>, allowing anyone to audit the full source code. For privacy questions or feedback, please open an issue at <a href="https://github.com/26eg/truescale-mobile/issues" target="_blank" rel="noopener noreferrer">https://github.com/26eg/truescale-mobile/issues</a>.</p>
+    </section>
+
+    <div class="footer">
+      <span>© 2026 26eg · GNU AGPL-3.0</span>
+      <span><a href="./index.html">Home / 主页</a> · <a href="https://github.com/26eg/truescale-mobile" target="_blank" rel="noopener noreferrer">GitHub Repository</a></span>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const buttons = document.querySelectorAll('[data-set-lang]');
+      function setLang(lang) {
+        root.setAttribute('data-active-lang', lang);
+        root.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+        buttons.forEach(function (btn) {
+          btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+        });
+      }
+      const params = new URLSearchParams(window.location.search);
+      const paramLang = params.get('lang');
+      const initial = paramLang === 'en' || paramLang === 'zh'
+        ? paramLang
+        : (navigator.language || '').toLowerCase().startsWith('zh')
+          ? 'zh'
+          : 'en';
+      setLang(initial);
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLang(btn.getAttribute('data-set-lang'));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

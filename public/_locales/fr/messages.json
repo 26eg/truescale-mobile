@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "TrueScale Mobile - Aperçu taille réelle 1:1",
+    "description": "Extension name shown in Chrome Web Store and toolbar."
+  },
+  "extDesc": {
+    "message": "Prévisualisez les sites mobiles et tablettes à taille réelle 1:1 sur PC avec calibrage par carte et captures HD.",
+    "description": "Extension description for Chrome Web Store."
+  }
+}

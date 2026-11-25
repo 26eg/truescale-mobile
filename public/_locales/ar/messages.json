@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "TrueScale Mobile - الحجم الحقيقي 1:1",
+    "description": "Extension name shown in Chrome Web Store and toolbar."
+  },
+  "extDesc": {
+    "message": "معاينة مواقع الجوال واللوحي بالحجم الحقيقي 1:1 على سطح المكتب مع معايرة بالبطاقة ولقطات شاشة عالية الدقة.",
+    "description": "Extension description for Chrome Web Store."
+  }
+}

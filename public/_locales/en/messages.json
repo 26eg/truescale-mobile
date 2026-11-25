@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "TrueScale Mobile - 1:1 Real Size Preview",
+    "description": "Extension name shown in Chrome Web Store and toolbar."
+  },
+  "extDesc": {
+    "message": "Preview mobile & tablet web pages at true 1:1 physical screen size on desktop monitors with easy bank-card calibration.",
+    "description": "Extension description for Chrome Web Store."
+  }
+}

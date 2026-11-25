@@ -1,0 +1,37 @@
+{
+  "name": "truescale-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "author": "26eg",
+  "homepage": "https://26eg.github.io/truescale-mobile/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/26eg/truescale-mobile.git"
+  },
+  "description": "1:1 true physical size mobile & tablet web preview extension for Chromium browsers (Chrome & Ziniao).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --config vite.content.config.ts && vite build --config vite.touch-main.config.ts && vite build --config vite.inplace.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "generate:icons": "node scripts/generate-icons.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.469.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.8"
+  }
+}

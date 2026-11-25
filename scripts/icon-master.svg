@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="cShell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="cScreen" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="55%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="cRuler" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+  </defs>
+  <!-- Phone outer body: bounds x=16..80, y=4..92 (with 4px stroke) -->
+  <rect x="18" y="6" width="60" height="84" rx="14" fill="url(#cShell)" stroke="#0F172A" stroke-width="4"/>
+  <!-- Vivid emerald-to-cyan screen -->
+  <rect x="24" y="12" width="48" height="72" rx="8.5" fill="url(#cScreen)"/>
+  <!-- Crisp glass highlight -->
+  <path d="M24 20.5 C24 15.8 27.8 12 32.5 12 L56 12 L24 58 Z" fill="#FFFFFF" opacity="0.16"/>
+  <!-- Dynamic Island pill -->
+  <rect x="39" y="16" width="18" height="5.5" rx="2.75" fill="#0F172A"/>
+  <!-- Symmetric L-shaped physical ruler: vertical inner edge 86.5 (6.5px right gap), horizontal inner top 98.5 (6.5px bottom gap) -->
+  <path d="M 88 16 C 88 12.5 90.8 10 94.5 10 L 103.5 10 C 107.2 10 110 12.5 110 16 L 110 114 C 110 118.4 106.4 122 102 122 L 24 122 C 20.5 122 18 119.2 18 115.5 L 18 106.5 C 18 102.8 20.5 100 24 100 L 88 100 Z"
+        fill="url(#cRuler)" stroke="#0F172A" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Vertical inner ruler ticks -->
+  <rect x="88" y="24" width="10" height="4" rx="1.5" fill="#0F172A"/>
+  <rect x="88" y="42" width="7" height="3.5" rx="1.5" fill="#0F172A"/>
+  <rect x="88" y="60" width="10" height="4" rx="1.5" fill="#0F172A"/>
+  <rect x="88" y="78" width="7" height="3.5" rx="1.5" fill="#0F172A"/>
+  <!-- Horizontal bottom ruler ticks -->
+  <rect x="32" y="100" width="4" height="10" rx="1.5" fill="#0F172A"/>
+  <rect x="50" y="100" width="3.5" height="7" rx="1.5" fill="#0F172A"/>
+  <rect x="68" y="100" width="4" height="10" rx="1.5" fill="#0F172A"/>
+</svg>
