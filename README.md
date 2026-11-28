@@ -66,7 +66,7 @@ npm run build      # 生成 MV3 产物到 dist/
 
 - [x] `manifest_version: 3`，纯本地静态打包，无远程代码或 `eval`。
 - [x] 最小必要权限集：`declarativeNetRequest`、`tabs`、`storage`、`scripting`（+ `<all_urls>` 用于无弹窗截图）；不申请 `debugger`、`management`、`cookies`。
-- [x] 版本号规则：`manifest.json` 使用 Chrome 商店要求的纯数字 4 段式 `version`（当前正式版 `1.0.0.0`）配合人类可读 `version_name`（`1.0.0`），并随产物附带 `THIRD_PARTY_LICENSES.txt`。
+- [x] 版本号规则：`manifest.json` 使用 Chrome 商店要求的纯数字 4 段式 `version`（当前正式版 `1.0.1.0`）配合人类可读 `version_name`（`1.0.1`），并随产物附带 `THIRD_PARTY_LICENSES.txt`。
 - [x] 规则严格按 `tabId` 隔离，标签关闭自动销毁，不污染其他工作/店铺标签页。
 - [x] 多语言与隐私：`_locales/` 6 国语言均符合商店字符限制，双语隐私政策静态站位于 [site/privacy.html](./site/privacy.html)。
 

@@ -235,7 +235,7 @@ const en = {
   guideCard3Title: '3. Frame & Safe Area',
   guideCard3Desc: 'Toggle realistic titanium frames, mobile browser bars, and safe area guides.',
   guideCard4Title: '4. High-Res Screenshot & Edit',
-  guideCard4Desc: 'Capture 2× single or framed long screenshots with auto-scroll preview & DingTalk-style markup.',
+  guideCard4Desc: 'Capture 2× single or framed long screenshots with auto-scroll preview & quick annotation markup.',
   guideCard5Title: '5. Monitor 1:1 Calibration',
   guideCard5Desc: 'Calibrate once via standard card, square ruler, real device, or custom millimeter span.',
   guideCard6Title: '6. Quick Nav & Sidebars',

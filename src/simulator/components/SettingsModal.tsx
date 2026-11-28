@@ -40,7 +40,7 @@ export function SettingsModal({
       typeof chrome !== 'undefined' && chrome.runtime?.getManifest
         ? chrome.runtime.getManifest()
         : null;
-    return manifest?.version_name || manifest?.version || '1.0.0';
+    return manifest?.version_name || manifest?.version || '1.0.1';
   }, []);
 
   if (!open) return null;

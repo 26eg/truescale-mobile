@@ -458,6 +458,17 @@
       return;
     }
 
+    if (data.type === 'TS_MSG_RELOAD_VIEWPORT') {
+      if (typeof data.reqId === 'string') {
+        window.parent.postMessage(
+          { type: 'TS_MSG_REPLY', reqId: data.reqId, payload: { ok: true } },
+          '*',
+        );
+      }
+      window.location.reload();
+      return;
+    }
+
     if (data.type === 'TS_MSG_SCROLL_EDGE') {
       stopMomentum();
       const scroller = findPrimaryScroller();

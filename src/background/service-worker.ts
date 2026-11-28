@@ -250,9 +250,10 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 
 // Direct 1-click toggle from the extension icon without opening a popup
 chrome.action?.onClicked?.addListener(async (tab) => {
-  if (!tab.id || !isSupportedPreviewUrl(tab.url)) {
+  const currentUrl = tab.url || tab.pendingUrl;
+  if (!tab.id || !isSupportedPreviewUrl(currentUrl)) {
     if (tab.id) {
-      await syncActionForTab(tab.id, tab.url);
+      await syncActionForTab(tab.id, currentUrl);
     }
     return;
   }

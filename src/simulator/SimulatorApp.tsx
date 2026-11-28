@@ -425,6 +425,49 @@ export function SimulatorApp({
         } satisfies RuntimeRequest)
         .catch(() => {});
     }
+
+    const frameWin = iframeRef.current?.contentWindow;
+    if (frameWin) {
+      const reqId = `ts-reload-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+      const acked = await new Promise<boolean>((resolve) => {
+        let settled = false;
+        const timer = window.setTimeout(() => {
+          if (settled) return;
+          settled = true;
+          window.removeEventListener('message', onMsg);
+          resolve(false);
+        }, 250);
+
+        const onMsg = (event: MessageEvent) => {
+          if (
+            event.source === frameWin &&
+            event.data?.type === 'TS_MSG_REPLY' &&
+            event.data?.reqId === reqId
+          ) {
+            if (settled) return;
+            settled = true;
+            window.clearTimeout(timer);
+            window.removeEventListener('message', onMsg);
+            resolve(true);
+          }
+        };
+
+        window.addEventListener('message', onMsg);
+        frameWin.postMessage({ type: 'TS_MSG_RELOAD_VIEWPORT', reqId }, '*');
+      });
+
+      if (acked) {
+        return;
+      }
+
+      try {
+        frameWin.location.reload();
+        return;
+      } catch {
+        // Cross-origin frame without active bridge falls back to remounting iframe
+      }
+    }
+
     setReloadKey((k) => k + 1);
   }, [tabId, activeDevice]);
 
